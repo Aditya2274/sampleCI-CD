@@ -29,6 +29,6 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-              sudo cp /home/ubuntu/site/index.html /var/www/html/
+              sudo cp /home/ubuntu/site/portfolio.html /var/www/html/
               sudo rm -f /var/www/html/index.nginx-debian.html
               sudo systemctl reload nginx
